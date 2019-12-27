@@ -1,0 +1,128 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title jim jimmy
+    
+block main-wrapper
+    .about-page
+        //- section banner top
+        section.banner-top
+            .banner-top--background-full-screen
+                img(src="/assets/imgs/default/banner-about.png", alt="banner-top")
+                .banner-top--content
+                    .content-h1 
+                        h1.banner-top--content--title-h1 About us
+                    .banner-top--content--description 
+                        p Hand crafted in York our beautiful marquees bring timeless elegance to your celebration and an atmosphere of  luxury to make your party perfect.
+        //-section body
+        section.about-page--main
+            .container
+                .row.row-custom-le
+                    .col-lg-5.col-md-12.col-sm-12.col-12.col-custom
+                        .about-page--main--cont-group
+                            h4.about-page--title-h4 Welcome to JimJimmy Marquees
+                            .about-page--descripton 
+                                p Friends Jim and Jimmy founded JimJimmy Marquees with a shared vision to create an exciting outdoor business built on the values of collaborative and respectful customer service, beautifully made products, sustainability and...fun.
+                                p We are committed to offering the very best products supported by the highest levels of service. We are proud to be the exclusive partner of artisan manufacturer Wills Marquees in Southern and South West England.
+                                p Hand made in York with painstaking attention to detail our beautiful pole-tents feature breathable canvas canopies and posses a timeless elegance that will bring an evocative aura of luxury to your celebration.
+                    .col-lg-7.col-md-12.col-sm-12.col-12.col-custom-1
+                        .about-page--main--cont-image
+                            img(src="/assets/imgs/default/body-about-1.png", alt="body-about-1")
+                .row.row-custom-chan
+                    .col-lg-5.col-md-12.col-sm-12.col-12.col-custom
+                        .about-page--main--cont-group
+                            h4.about-page--title-h4 What we do
+                            .about-page--descripton 
+                                p Friends Jim and Jimmy founded JimJimmy Marquees with a shared vision to create an exciting outdoor business built on the values of collaborative and respectful customer service, beautifully made products, sustainability and...fun.
+                                p We are committed to offering the very best products supported by the highest levels of service. We are proud to be the exclusive partner of artisan manufacturer Wills Marquees in Southern and South West England.
+                                p Hand made in York with painstaking attention to detail our beautiful pole-tents feature breathable canvas canopies and posses a timeless elegance that will bring an evocative aura of luxury to your celebration.
+                    .col-lg-7.col-md-12.col-sm-12.col-12.col-custom-1
+                        .about-page--main--cont-image
+                            img(src="/assets/imgs/default/body-about-2.png", alt="body-about-2")
+                .row.row-custom-le
+                    .col-lg-5.col-md-12.col-sm-12.col-12.col-custom
+                        .about-page--main--cont-group
+                            h4.about-page--title-h4 where we go
+                            .about-page--descripton 
+                                p Friends Jim and Jimmy founded JimJimmy Marquees with a shared vision to create an exciting outdoor business built on the values of collaborative and respectful customer service, beautifully made products, sustainability and...fun.
+                                p We are committed to offering the very best products supported by the highest levels of service. We are proud to be the exclusive partner of artisan manufacturer Wills Marquees in Southern and South West England.
+                                p Hand made in York with painstaking attention to detail our beautiful pole-tents feature breathable canvas canopies and posses a timeless elegance that will bring an evocative aura of luxury to your celebration.
+                    .col-lg-7.col-md-12.col-sm-12.col-12.col-custom-1
+                        .about-page--main--cont-image
+                            img(src="/assets/imgs/default/body-about-3.png", alt="body-about-3")
+                .row.row-custom-chan
+                    .col-lg-5.col-md-12.col-sm-12.col-12.col-custom
+                        .about-page--main--cont-group
+                            h4.about-page--title-h4 Sustainability
+                            .about-page--descripton 
+                                p Friends Jim and Jimmy founded JimJimmy Marquees with a shared vision to create an exciting outdoor business built on the values of collaborative and respectful customer service, beautifully made products, sustainability and...fun.
+                                p We are committed to offering the very best products supported by the highest levels of service. We are proud to be the exclusive partner of artisan manufacturer Wills Marquees in Southern and South West England.
+                                p Hand made in York with painstaking attention to detail our beautiful pole-tents feature breathable canvas canopies and posses a timeless elegance that will bring an evocative aura of luxury to your celebration.
+                    .col-lg-7.col-md-12.col-sm-12.col-12.col-custom-1
+                        .about-page--main--cont-image
+                            img(src="/assets/imgs/default/body-about-4.png", alt="body-about-4")
+        //-section Blog
+        section.about-page--blog
+            .home-page--our-marquees--image-behinde-section
+                img(src="/assets/imgs/default/image-behinde-1.png", alt="inage-behinde")
+            .container
+                h4.about-page--blog--title-h4 Blog
+                .line-under
+                .about-page--blog--content-post-type
+                    -
+                        let data_posts = [
+                            {title:"Hire a Heated Marquee this winter!",src:"/assets/imgs/default/gallery.png",alt:"blog"},
+                            {title:"A summer full of festivals with Great British Food Festival",src:"/assets/imgs/default/gallery-1.png",alt:"blog"},
+                            {title:"The Trapeze Marquee beats the Capri Marquee hands down!",src:"/assets/imgs/default/gallery-2.png",alt:"blog"}
+                        ]
+                    .row
+                        each item in data_posts
+                            .col-lg-4.col-md-6
+                                .about-page--blog--cont-group
+                                    .about-page--blog--cont-group--cont-img
+                                        a(href="#" title=item.title)
+                                            img(src=item.src, alt=item.alt)
+                                    .about-page--blog--cont-group--cont-box
+                                        a(href="#" title=item.title)
+                                            h5.title-post-blog=item.title
+                                        .post-exeprt-description  We are committed to offering the very best products supported by the highest levels...
+                                        .btn-view-more VIEW MORE
+                .btn-view-all VIEW ALL
+        //-section slider
+        section.slide-text
+            .slide-text--background-image
+                img(src="/assets/imgs/default/image-behinde-slide.png", alt="image-behinde-slide")
+            .slide-text--background-color
+            .container
+                .slide-text--content-big-group
+                    .slide-text--cont-icon
+                        img(src="/assets/imgs/default/Shape.png", alt="shape")
+                    .slide-text--content-group
+                        .slide-text--content-slide
+                            .content
+                                p A huge Thank You to you for your fantastic service. I really was a professional, seamless operation, we had absolute confidence as soon as we met you, and we enjoyed having you ‘on site’ before and after the day. We had a fantastic time and we would not hesitate to recommend you. Great selection and availability of equipment to order.
+                                .slider-author Anne - Somerset
+                        .slide-text--content-slide 
+                            .content
+                                p  A huge Thank You to you for your fantastic service. I really was a professional, seamless operation, we had absolute confidence as soon as we met you, and we enjoyed having you ‘on site’ before and after the day. We had a fantastic time and we would not hesitate to recommend you. Great selection and availability of equipment to order.
+                                .slider-author Anne - Somerset
+                        .slide-text--content-slide 
+                            .content
+                                p A huge Thank You to you for your fantastic service. I really was a professional, seamless operation, we had absolute confidence as soon as we met you, and we enjoyed having you ‘on site’ before and after the day. We had a fantastic time and we would not hesitate to recommend you. Great selection and availability of equipment to order.
+                                .slider-author Anne - Somerset
+        //-section instagram
+        section.instagram
+            .container
+                h5.instagram--title-h5 Check out our Instagram
+                .instagram--cont-icon
+                    a(href="#")
+                        img(src="/assets/imgs/default/icon-instagram.png", alt="icon-instagram")
+            .row
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/instagram.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills-1.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills-2.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills.png", alt="")

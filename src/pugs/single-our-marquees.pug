@@ -1,0 +1,129 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title jim jimmy
+    
+block main-wrapper
+    .single-marquees-page
+        //- section banner top
+        section.banner-top
+            .banner-top--background-full-screen
+                img(src="/assets/imgs/default/banner-s.png", alt="banner-top")
+                .banner-top--content
+                    .content-h1 
+                        h1.banner-top--content--title-h1 Our marquees
+                    .banner-top--content--description 
+                        p Hand crafted in York our beautiful marquees bring timeless elegance to your celebration and an atmosphere of  luxury to make your party perfect.
+        //-section body sigle our marquees
+        section.single-marquees--content
+            .container
+                .row.row-custom.row-le
+                    .col-lg-5.col-md-12.col-sm-12.col-12.col-custom
+                        .col-content-box
+                            h4.single-marquees--contetn--title-h4 Beautiful Marquees Beautifully Made
+                            .marquees-main-contetn--description 
+                                p With a contemporary take on a classic British design our beautiful marquees for hire compliment and enhance the special occasions they were designed for.
+                                p Hand crafted in York by a small team of passionate artisans our traditional pole-tent marquees feature breathable sailcloth canvas to bring an enchanting atmosphere of romance and glamour to your celebration
+                                p We are proud to be the exclusive partner of artisan marquee manufacturer Wills Marquees in Southern and South West England.
+                    .col-lg-7.col-md-12.col-sm-12.col-12.col-custom
+                        .col-conttent-video
+                            img(src="/assets/imgs/default/video-s.png", alt="")
+                .single--cover-slide
+                    .cont-btn-slick-pr-next
+                        .prev 
+                            i.fas.fa-arrow-left
+                            //- //- span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+                            //- img(src="/assets/imgs/default/btn-pre.png", alt="")
+                        .next
+                            i.fas.fa-arrow-right
+                            //- //- span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+                            //- img(src="/assets/imgs/default/btn-next.png", alt="")
+                        //- .prev.hover
+                        //-     img(src="/assets/imgs/default/arrow-left.png", alt="")
+                        //- .next.hover
+                        //-     img(src="/assets/imgs/default/arrow-right.png", alt="")
+                    .row
+                        .col-lg-6.col-md-12.col-sm-12.col-12
+                            .single--cont-group-slide
+                                //-slide-1
+                                .single-cont-slide
+                                    .col-cont-image
+                                        img(src="/assets/imgs/default/single-2.png", alt="")
+                                //-slide-2
+                                .single-cont-slide
+                                    .col-cont-image
+                                        img(src="/assets/imgs/default/wills-1.png", alt="")
+                                //-slide-3
+                                .single-cont-slide
+                                    .col-cont-image
+                                        img(src="/assets/imgs/default/post-marquees-1.png", alt="")
+                        .col-lg-6.col-md-12.col-sm-12.col-12
+                            .col-content-overview-price
+                                .single-overview
+                                    h5.single-marquees--title-h5 Overview
+                                    .description 
+                                        p This timelessly elegant marquee features a stunning breathable canvas canopy and fabulous hand turned wooden king-poles. Glamour comes as standard. See full details...
+                                    h5.single-marquees--title-h5 Seating Capacity
+                                    ul.option.option-seating 
+                                        li 120 - 170 guests with bar and dance-floor.
+                                        li 220 guests seated with bar.
+                                    h5.single-marquees--title-h5 Demensions
+                                    ul.option-demensions.option
+                                        li 120 - 170 guests with bar and dance-floor.
+                                        li 220 guests seated with bar.
+                                .single-cont-price
+                                    h5.single-marquees--title-h5 Price: £4,900
+                                    .btn-hire-now Hire now
+                .content-contact-us
+                    .cont-image-behinde
+                        img(src="/assets/imgs/default/img-hidd.png", alt="")
+                    h4 contact us
+                    .line-under
+                    .contact-content-group
+                        .content
+                            h5  call us
+                            a(href="tel+07786984582") 07786 984582
+                        .content
+                            h5 Mail us
+                            a(href="maito:sales@jimjimmy.co.uk") sales@jimjimmy.co.uk
+                        .content
+                            h5 Chat with us
+                            a(href="m.me/jimjimmymarquees") m.me/jimjimmymarquees
+        //-section slider
+        section.slide-text
+            .slide-text--background-image
+                img(src="/assets/imgs/default/image-behinde-slide.png", alt="image-behinde-slide")
+            .slide-text--background-color
+            .container
+                .slide-text--content-big-group
+                    .slide-text--cont-icon
+                        img(src="/assets/imgs/default/Shape.png", alt="shape")
+                    .slide-text--content-group
+                        .slide-text--content-slide
+                            .content
+                                p A huge Thank You to you for your fantastic service. I really was a professional, seamless operation, we had absolute confidence as soon as we met you, and we enjoyed having you ‘on site’ before and after the day. We had a fantastic time and we would not hesitate to recommend you. Great selection and availability of equipment to order.
+                                .slider-author Anne - Somerset
+                        .slide-text--content-slide 
+                            .content
+                                p  A huge Thank You to you for your fantastic service. I really was a professional, seamless operation, we had absolute confidence as soon as we met you, and we enjoyed having you ‘on site’ before and after the day. We had a fantastic time and we would not hesitate to recommend you. Great selection and availability of equipment to order.
+                                .slider-author Anne - Somerset
+                        .slide-text--content-slide 
+                            .content
+                                p A huge Thank You to you for your fantastic service. I really was a professional, seamless operation, we had absolute confidence as soon as we met you, and we enjoyed having you ‘on site’ before and after the day. We had a fantastic time and we would not hesitate to recommend you. Great selection and availability of equipment to order.
+                                .slider-author Anne - Somerset
+        //-section instagram
+        section.instagram
+            .container
+                h5.instagram--title-h5 Check out our Instagram
+                .instagram--cont-icon
+                    a(href="#")
+                        img(src="/assets/imgs/default/icon-instagram.png", alt="icon-instagram")
+            .row
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/instagram.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills-1.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills-2.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills.png", alt="")

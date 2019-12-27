@@ -1,0 +1,30 @@
+/* 
+ *  Theme variables 
+ */
+$active-color:#ed1191;
+$light-color: #fff;
+
+$dark-color: #000;
+$text-color-bg: rgba(0, 0, 0, 0.7);
+
+$title-color:#444;
+$text-color-sm: #555;
+
+
+/* 
+ *  Fonts define 
+ */
+@font-face {
+    font-family: s-13;
+    src: url("../fonts/Slabo13px-Regular.ttf");
+}
+
+@font-face {
+    font-family: p-d-rl;
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+
+}
+@font-face {
+    font-family: p-d-bold;
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}

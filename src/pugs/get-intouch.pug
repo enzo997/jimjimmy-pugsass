@@ -1,0 +1,64 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title jim jimmy
+    
+block main-wrapper
+    .get-intouch-page
+        //- section banner top
+        section.get-intouch--banner
+            .container
+                .get-intouch--banner--content-tab
+                    -
+                        let cont_tab = [
+                            {title:"Trestile or round tables"},
+                            {title:"Dancefloor"},
+                            {title:"Flooring"},
+                            {title:"Bar"},
+                            {title:"Lighting"},
+                            {title:"Catering tent"},
+                            {title:"Relaxed seating"},
+                            {title:"Flower rings"},
+                            {title:"Additional extras"}
+                        ]
+                    //-- Nav tabs
+                    ul.nav.nav-tabs
+                        li.active
+                        - for(var x = 0; x < 9; x++)
+                            li
+                    //-Tab panes
+                    .tab-panes
+                        .tab-content.active
+                            h4 How many guests?
+                            .tab-content--description 
+                                p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque ornare rhoncus. Donec ornare nunc augue. Mauris in dignissim felis, sit amet facilisis nulla.
+                            .tab-content--group-checkbook
+                        each item in cont_tab
+                            .tab-content
+                                h4=item.title
+                                .tab-content--description 
+                                    p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque ornare rhoncus. Donec ornare nunc augue. Mauris in dignissim felis, sit amet facilisis nulla.
+                                .tab-content--group-checkbook
+                    .cont-btn-tab
+                        button.next Next
+                        button.get-quote 
+                            a(href="#") GET QUOTE
+                        button.prev Back
+    
+        .background-white
+        //-section instagram
+        section.instagram
+            .container
+                h5.instagram--title-h5 Check out our Instagram
+                .instagram--cont-icon
+                    a(href="#")
+                        img(src="/assets/imgs/default/icon-instagram.png", alt="icon-instagram")
+            .row
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/instagram.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills-1.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills-2.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills.png", alt="")

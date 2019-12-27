@@ -1,0 +1,81 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title jim jimmy
+    
+block main-wrapper
+    .gallery-page
+        //- section banner top
+        section.banner-top
+            .banner-top--background-full-screen
+                img(src="/assets/imgs/default/banner-gallery.png", alt="banner-top")
+                .banner-top--content
+                    .content-h1 
+                        h1.banner-top--content--title-h1 Gallery
+                    .banner-top--content--description 
+                        p Hand crafted in York our beautiful marquees bring timeless elegance to your celebration and an atmosphere of  luxury to make your party perfect.
+        section.gallery
+            .container
+                h4.gallery-title-h4 Beauty Marquees Gallery
+                .line-under
+                .gallery--main-nav-menu
+                    -
+                        let data_menu = [
+                            {href:"#",label:"ALL"},
+                            {href:"#",label:"360 marquee"},
+                            {href:"#",label:"exterior"},
+                            {href:"#",label:"interior"},
+                            {href:"#",label:"furniture"},
+                            {href:"#",label:"lighting"},
+                        ]
+                    ul 
+                        each item in data_menu
+                            li
+                                a(href=item.href)=item.label
+                .gallery--content-group-anotther
+                    -
+                        let data_image = [
+                            {src:"/assets/imgs/default/gallery.png", alt:"gallery"},
+                            {src:"/assets/imgs/default/gallery-1.png", alt:"gallery-1"},
+                            {src:"/assets/imgs/default/gallery-2.png", alt:"gallery-2"},
+                            {src:"/assets/imgs/default/gallery-3.png", alt:"gallery-3"},
+                            {src:"/assets/imgs/default/gallery-4.png", alt:"gallery-4"},
+                            {src:"/assets/imgs/default/gallery-5.png  ", alt:"wills-5"},
+                            {src:"/assets/imgs/default/gallery-6.png", alt:"gallery-6"},
+                            {src:"/assets/imgs/default/gallery-7.png", alt:"gallery-7"},
+                            {src:"/assets/imgs/default/gallery-8.png", alt:"gallery-8"},
+                            {src:"/assets/imgs/default/gallery-9.png", alt:"gallery-9"},
+                            {src:"/assets/imgs/default/gallery-10.png", alt:"gallery-10"},
+                            {src:"/assets/imgs/default/gallery-11.png  ", alt:"wills-11"},
+                            {src:"/assets/imgs/default/gallery.png", alt:"gallery"},
+                            {src:"/assets/imgs/default/gallery-1.png", alt:"gallery-1"},
+                            {src:"/assets/imgs/default/gallery-2.png", alt:"gallery-2"}
+                        ]
+                    .row.row-custom
+                        each item in data_image
+                            .col-lg-4.col-md-4.col-sm-12.col-12.col-custom
+                                .gallery--cont-image
+                                    .background--hidden
+                                    .background-hover
+                                        .content-group
+                                            .cont-icon
+                                                img(src="/assets/imgs/default/icon-3d.png", alt="icon-3d")
+                                            .cont-text EXPLORE 3D SPACE
+                                    img(src=item.src,alt=item.alt)
+                    .btn-load-more LOAD MORE
+        //-section instagram
+        section.instagram
+            .container
+                h5.instagram--title-h5 Check out our Instagram
+                .instagram--cont-icon
+                    a(href="#")
+                        img(src="/assets/imgs/default/icon-instagram.png", alt="icon-instagram")
+            .row
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/instagram.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills-1.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills-2.png", alt="")
+                .col-lg-3.col-md-6.col-sm-12.col-12.col-custom
+                    img(src="/assets/imgs/default/wills.png", alt="")

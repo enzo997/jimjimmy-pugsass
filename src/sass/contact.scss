@@ -1,0 +1,121 @@
+.contact-page{
+    .contact-main{
+        padding-top: 70px;
+        &--content-group{
+            display: flex;
+        }
+        &--content-group-col-left{
+            color: rgba(0, 0, 0, 0.7);
+            font-family: s-13;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 40px;
+            margin-right: 147px;
+            a{
+                color: rgba(0, 0, 0, 0.7);
+                &:hover{
+                    color: #ed1191;
+                }
+            }
+            .cont-information{
+                width: 100%;
+                max-width: 438px;
+                margin-bottom: 40px;
+            }
+            .cont-description{
+                width: 100%;
+                max-width: 438px;
+            }
+        }
+        &--content-group-col-right{
+            width: 100%;
+            max-width: 530px;
+            position: relative;
+            form{
+                input, textarea{
+                    width: 100%;
+                    outline: none !important;
+                }
+                input{
+                    height: 40px;
+                    margin-bottom: 30px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 1px solid #d8d8d8;
+                    color: rgba(0, 0, 0, 0.7);
+                    font-family: s-13;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    -webkit-transition: all .4s ease-out;
+                    transition: all .4s ease-out;
+                    &:focus{
+                        border-bottom: 1px solid #ed1191;
+                    }
+                }
+                textarea{
+                    color: rgba(0, 0, 0, 0.7);
+                    font-family: s-13;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    margin-bottom: 30px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 1px solid #d8d8d8;
+                    -webkit-transition: all .4s ease-out;
+                    transition: all .4s ease-out;
+                    &:focus{
+                        border-bottom: 1px solid #ed1191;
+                    }
+                }
+                .btn-send{
+                    width: 98px;
+                }
+                input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+                    color: #717171;
+                    font-family: p-d-rl;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+                input::-moz-placeholder, textarea::-webkit-input-placeholder{ /* Firefox 19+ */
+                    color: #717171;
+                    font-family: p-d-rl;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 20px;
+
+                }
+                input:-ms-input-placeholder, textarea::-webkit-input-placeholder{ /* IE 10+ */
+                    color: #717171;
+                    font-family: p-d-rl;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 20px;
+
+                }
+                input:-moz-placeholder , textarea::-webkit-input-placeholder{ /* Firefox 18- */
+                    color: #717171;
+                    font-family: p-d-rl;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+                .effect-after-send{
+                    position: absolute;
+                    bottom: 5px;
+                    right: 0;
+                    font-family: s-13;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    -webkit-transition: all .5s ease-out;
+                    transition: all .5s ease-out;
+                }
+            }
+        }
+    }
+}
